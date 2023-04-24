@@ -46,7 +46,7 @@ function runGame(gameType) {
     } else if (gameType === "subtract" ) {
         displaySubtractQuestion(num1,num2);
     } else if (gameType === "division" ) {
-        dispalyDivisionQuestion(num1,num2);
+        displayDivisionQuestion(num1,num2);
     } else {
         AudioWorklet(`Unkown game type: ${gameType}`);
         throw `Unkown game type: ${gameType}. Aborting!`;
@@ -140,7 +140,7 @@ function displayMultiplyQuestion(operand1, operand2) {
 
 }
 
-function dispalyDivisionQuestion(operand1, operand2) {
+function displayDivisionQuestion(operand1, operand2) {
     
     operand1 = operand1 * operand2;
 
